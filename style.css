@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap');
+
+/* --- General Styles --- */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfaf6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* --- Header --- */
+header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 2px dashed #e67e22;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: #2c3e50;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+/* --- Sections --- */
+section {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-left: 5px solid #e67e22;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    color: #2c3e50;
+    margin-top: 0;
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom: 10px;
+}
+
+/* --- Ghent Info Section --- */
+#info-ghent .ghent-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#info-ghent .ghent-section {
+    flex-basis: calc(33.333% - 20px);
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#info-ghent h3 {
+    color: #e67e22;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+/* --- Wi-Fi Section --- */
+#wifi {
+    text-align: center;
+}
+
+.qr-code {
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+    border: 5px solid #ecf0f1;
+    border-radius: 8px;
+}
+
+#wifi p {
+    font-size: 1.1em;
+}
+
+/* --- House Rules --- */
+#house-rules ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#house-rules li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23e67e22" class="bi bi-check-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>') no-repeat left center;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+#house-rules li strong {
+    color: #2c3e50;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    #info-ghent .ghent-section {
+        flex-basis: 100%;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+}
